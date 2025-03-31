@@ -37,3 +37,21 @@ class PageReplacement:
             print(f"Page: {page} | Frames: {self.frames}")
             
         return page_faults
+    
+    def optimal(self, reference_string):
+        memory = []
+        page_faults = 0
+        steps = []
+
+        for i, page in enumerate(reference_string):
+            if page not in memory:
+                if len(memory) < self.capacity:
+                    memory.append(page)
+                else:
+                    future_uses = [reference_string[i:].index(p) if p in reference_string[i:] else float("inf") for p in memory]
+                    memory.pop(future_uses.index(max(future_uses)))
+                    memory.append(page)
+                page_faults += 1
+            steps.append(list(memory))  # Store steps for visualization
+
+        return page_faults, steps
