@@ -5,25 +5,18 @@ This project is a visualization tool for simulating page replacement algorithms 
 
 🚀 Features:
 
-📌 Implements FIFO, LRU, and Optimal page replacement algorithms.
-
-🎨 Provides a graphical visualization of page faults and memory frame updates.
-
-🏗️ Allows users to input custom reference strings and frame sizes.
-
-📊 Compares different algorithms based on efficiency and performance.
-
-🔄 Step-by-step execution for better understanding of memory management.
+ • 📌 Implements FIFO, LRU, and Optimal page replacement algorithms.
+ • 🎨 Provides a graphical visualization of page faults and memory frame updates.
+ • 🏗️ Allows users to input custom reference strings and frame sizes.
+ • 📊 Compares different algorithms based on efficiency and performance.
+ • 🔄 Step-by-step execution for better understanding of memory management.
 
 
 🛠️ Technologies Used:
 
-Python 🐍
+ • Python 🐍
+ • Tkinter (for GUI) 🎨
+ • Matplotlib (for visualization) 📊
+ • GitHub for collaboration 🌍
 
-Tkinter (for GUI) 🎨
-
-Matplotlib (for visualization) 📊
-
-GitHub for collaboration 🌍
-
-💡 Contributors: Team of 3 members working collaboratively with GitHub workflow.
+💡 Contributors: Harshita, Kartik, Rounak.
